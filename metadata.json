@@ -1,0 +1,6 @@
+{
+  "name": "Sotium POS - La nueva generación de software para hostelería.",
+  "description": "Sotium POS: Software TPV y ERP profesional para restaurantes, bares, cafeterías y franquicias con VeriFactu, Ley Antifraude, Facturae, TicketBAI, KDS, escandallos e IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
