@@ -1,1422 +1,161 @@
 <div align="center">
 
-# 🍽️ Sotium POS
+<img src="https://raw.githubusercontent.com/sotium/sotium-pos/main/assets/sotium-logo.png" alt="Sotium POS Logo" width="180" height="180" />
 
-### La nueva generación de software para hostelería
+# SOTIUM POS Enterprise
 
-ERP + TPV Enterprise diseñado para restaurantes, bares, cafeterías, hoteles, franquicias y grupos de restauración.
+### **Plataforma Integral de Gestión Hostelera y Punto de Venta Enterprise**
+*Sistema TPV multi-compañía, multi-centro, offline-first con Inteligencia Artificial Gemini, Veri*Factu, TicketBAI, KDS, Control de Producción, APPCC, RRHH y Business Intelligence.*
 
----
+[![Version](https://img.shields.io/badge/version-1.0.0--enterprise-blue.svg?style=for-the-badge&logo=semver)](https://github.com/sotium/sotium-pos)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19.0.1-61DAFB.svg?style=for-the-badge&logo=react)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-22.14-339933.svg?style=for-the-badge&logo=nodedotjs)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.21-000000.svg?style=for-the-badge&logo=express)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-6.4-2D3748.svg?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1.svg?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-Better--SQLite3-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
+[![Vitest](https://img.shields.io/badge/Vitest-4.1.10-6E9F18.svg?style=for-the-badge&logo=vitest)](https://vitest.dev/)
+[![Spanish Compliance](https://img.shields.io/badge/Cumplimiento-VeriFactu%20%7C%20TicketBAI-red.svg?style=for-the-badge)](./docs/VERIFACTU.md)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Status](https://img.shields.io/badge/status-Release_Candidate-success)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=black)
-![NodeJS](https://img.shields.io/badge/Node.js-20.x-339933?logo=node.js&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-Ready-47848F?logo=electron)
-![SQLite](https://img.shields.io/badge/SQLite-Offline-003B57?logo=sqlite)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Enterprise-336791?logo=postgresql)
-![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-Realtime-black?logo=socketdotio)
-![Gemini AI](https://img.shields.io/badge/Gemini-AI-blueviolet)
-![License](https://img.shields.io/badge/license-Private-red)
+[📐 Arquitectura](./docs/ARCHITECTURE.md) • [📖 Documentación API](./docs/API.md) • [⚡ Guía de Instalación](./docs/INSTALL.md) • [🚀 Despliegue](./docs/DEPLOYMENT.md) • [💬 FAQ](./docs/FAQ.md)
 
 </div>
 
 ---
 
-# 🚀 ¿Qué es Sotium POS?
+## 📋 Resumen Ejecutivo
 
-**Sotium POS** es una plataforma **ERP + TPV Enterprise** desarrollada específicamente para el sector de la hostelería.
+**SOTIUM POS Enterprise** es la solución tecnológica de referencia para la industria de la hostelería, restauraicón organizada, franquicias y colectividades. Diseñado desde cero bajo principios de **Clean Architecture** y arquitectura híbrida **Offline-First**, Sotium POS garantiza la continuidad operativa absoluta del negocio incluso ante la caída total de la red eléctrica o conexión a Internet.
 
-No se trata únicamente de un terminal punto de venta.
-
-Es un ecosistema completo capaz de gestionar de forma integrada:
-
-- 🍽 Restaurantes
-- ☕ Cafeterías
-- 🍺 Bares
-- 🌴 Terrazas
-- 🍕 Pizzerías
-- 🍔 Fast Food
-- 🍷 Gastrobares
-- 🏨 Hoteles
-- 🍸 Discotecas
-- 👨‍🍳 Dark Kitchens
-- 🚚 Delivery
-- 🏢 Franquicias
-- 🌍 Grupos empresariales
+Integra en un único ecosistema modular la gestión del TPV táctil, comandero móvil, plano interactivo de comedor, cocina (KDS), inventarios con escandallos complejos, producción industrial, compras, contabilidad oficial, nóminas y RRHH, APPCC e higiene alimentaria, gestión de activos/SAT, Business Intelligence avanzado e Inteligencia Artificial generativa basada en **Google Gemini 2.5 Flash**.
 
 ---
 
-# 🎯 Objetivo
+## 🌟 Módulos Principales
 
-Crear uno de los sistemas TPV + ERP más completos del mercado europeo.
-
-Inspirado en soluciones como:
-
-- Oracle Micros
-- ICG FrontRest
-- Ágora
-- SAP Business One
-- Microsoft Dynamics
-- Revo XEF
-- Odoo
-- Glop
-
-pero diseñado desde cero para las necesidades reales de la hostelería moderna.
-
----
-
-# ✨ Características principales
-
-✔ ERP Enterprise
-
-✔ TPV táctil
-
-✔ Cocina digital (KDS)
-
-✔ Delivery Hub
-
-✔ Producción
-
-✔ Escandallos
-
-✔ Recetas
-
-✔ Compras
-
-✔ Almacén
-
-✔ CRM
-
-✔ RRHH
-
-✔ Finanzas
-
-✔ Business Intelligence
-
-✔ IA integrada
-
-✔ Multiempresa
-
-✔ Multisede
-
-✔ Offline SQLite
-
-✔ PostgreSQL
-
-✔ Socket.IO
-
-✔ VeriFactu
-
-✔ TicketBAI
-
-✔ Ley Antifraude
-
-✔ API REST
-
-✔ Integraciones Enterprise
-
-✔ Aplicaciones móviles
+| Módulo | Descripción | Documentación |
+| :--- | :--- | :---: |
+| **TPV & Comandas** | Venta táctil ultrarrápida, división de tickets, cobro multi-tarjeta, tarifas por sala/terraza. | [Ver Doc](./docs/TPV.md) |
+| **Cocina (KDS)** | Sistema de visualización para cocina por partidas, avisos sonoros, tiempos de preparación. | [Ver Doc](./docs/KDS.md) |
+| **Reservas & CRM** | Motor de reservas con plano de ocupación, lista de espera, no-show predictor e historial del cliente. | [Ver Doc](./docs/CRM.md) |
+| **Producción & Escandallos** | Órdenes de fabricación, escandallos multinivel, control de mermas y trazabilidad de lotes. | [Ver Doc](./docs/PRODUCTION.md) |
+| **Compras & Almacén** | Pedidos a proveedores, albaranes, control de caducidades, comparador de precios y reconciliación 3-way. | [Ver Doc](./docs/INTEGRATIONS.md) |
+| **Finanzas & Caja** | Arqueos de caja (Z/X), contabilidad PGC, facturación oficial Facturae, gestión de tesorería. | [Ver Doc](./docs/FINANCE.md) |
+| **RRHH & Control Horario** | Fichajes con trazabilidad legal española, cuadrantes de turnos, gestión de vacaciones y nóminas. | [Ver Doc](./docs/HR.md) |
+| **Cumplimiento Fiscal** | Módulo nativo Veri*Factu (AEAT) y TicketBAI (Diputaciones Forales Pais Vasco). | [Ver Doc](./docs/VERIFACTU.md) |
+| **Calidad APPCC** | Registros de temperatura, auditorías sanitarias, trazabilidad de alérgenos UE 1169/2011. | [Ver Doc](./docs/QUALITY.md) |
+| **Mantenimiento SAT** | Gestión de activos, mantenimiento preventivo/correctivo y control de recambios. | [Ver Doc](./docs/MAINTENANCE.md) |
+| **BI & Gemini AI** | Cuadro de mando ejecutivo, predicción de ventas, optimización de stock y asistente conversacional. | [Ver Doc](./docs/BI.md) |
+| **Multi-Compañía** | Gestión centralizada de múltiples marcas, cadenas y centros de trabajo con consolidación. | [Ver Doc](./docs/BACKOFFICE.md) |
 
 ---
 
-# 🏆 Principales capacidades
+## 🏗️ Arquitectura del Sistema
 
-## 🍽 TPV profesional
+Sotium POS combina lo mejor de dos mundos: la inmediatez y resiliencia de la base de datos local **SQLite (Better-SQLite3)** en terminales locales con la potencia de **PostgreSQL 16** mediante **Prisma ORM** en el servidor central.
 
-- Venta rápida
-- Barra
-- Mesas
-- Terraza
-- Delivery
-- Click & Collect
-- Cambio de mesa
-- División de cuentas
-- Descuentos
-- Cobros múltiples
-- Tickets
-- Facturación
-
----
-
-## 👨‍🍳 Cocina (KDS)
-
-- Comandas en tiempo real
-- Prioridades
-- Estados
-- Avisos
-- Producción integrada
-- Comunicación mediante Socket.IO
-
----
-
-## 📦 Almacén Enterprise
-
-- Inventario
-- Movimientos
-- Entradas
-- Salidas
-- Transferencias
-- Inventarios
-- Lotes
-- Caducidades
-- FIFO
-- FEFO
-
----
-
-## 🛒 Compras
-
-- Solicitudes
-- Pedidos
-- Recepciones
-- Facturas
-- 3-Way Matching
-- IA para compras
-- Comparación de proveedores
-
----
-
-## 👨‍🍳 Producción
-
-- Recetas
-- Escandallos
-- Semielaborados
-- Fabricación
-- Producción
-- Consumos automáticos
-- Mermas
-- Costes
-- Rentabilidad
-
----
-
-## 👥 CRM
-
-- Clientes
-- Fidelización
-- Historial
-- Reservas
-- Preferencias
-- Campañas
-
----
-
-## 👨‍💼 RRHH
-
-- Empleados
-- Turnos
-- Fichajes
-- Vacaciones
-- Roles
-- Permisos
-
----
-
-## 💰 Finanzas
-
-- Caja
-- Arqueos
-- Tesorería
-- Cobros
-- Pagos
-- Facturación
-- IVA
-- Informes
-
----
-
-## 📊 Business Intelligence
-
-- KPIs
-- Dashboards
-- Márgenes
-- Beneficios
-- Predicciones
-- Informes ejecutivos
-
----
-
-## 🤖 Sotium AI
-
-Motor de Inteligencia Artificial basado en **Google Gemini**.
-
-Capaz de:
-
-- Analizar ventas
-- Detectar anomalías
-- Recomendar compras
-- Optimizar recetas
-- Predecir demanda
-- Detectar desperdicios
-- Ayudar en decisiones empresariales
-
----
-
-# 🌍 Multiempresa
-
-Sotium POS soporta:
-
-- múltiples empresas
-- múltiples sedes
-- múltiples almacenes
-- múltiples cajas
-- múltiples usuarios
-
-con aislamiento completo de datos.
-
----
-
-# 📱 Ecosistema móvil
-
-Aplicaciones específicas para:
-
-- 📱 Camareros
-- 👨‍🍳 Cocina
-- 🚚 Repartidores
-- 👔 Gerentes
-
-Totalmente sincronizadas mediante Socket.IO.
-
----
-
-# 🇪🇸 Adaptado para España
-
-Cumplimiento con:
-
-- ✅ VeriFactu
-- ✅ TicketBAI
-- ✅ Ley Antifraude
-- ✅ Facturación española
-- ✅ IVA
-- ✅ Series fiscales
-- ✅ QR legal
-
----
-
-# 📸 Capturas de pantalla
-
-> Próximamente
-
-```
-/docs/images/dashboard.png
-
-/docs/images/tpv.png
-
-/docs/images/kds.png
-
-/docs/images/mobile.png
-
-/docs/images/bi.png
+```mermaid
+graph TD
+    ClientUI[React 19 + Tailwind CSS + Lucide] --> |WebSockets / REST| NodeServer[Server Node.js + Express]
+    NodeServer --> |OR-Mapping| Prisma[Prisma ORM 6.4]
+    NodeServer --> |Offline Engine| SQLite[Better-SQLite3 Sync Engine]
+    Prisma --> |Relational DB| PostgreSQL[(PostgreSQL 16 Enterprise)]
+    NodeServer --> |AI Engine| Gemini[Google Gemini AI 2.5]
+    NodeServer --> |Fiscal API| AEAT[AEAT Veri*Factu / TicketBAI]
+    NodeServer --> |Realtime| SocketIO[Socket.IO Server]
 ```
 
----
-
-# ⭐ Estado del proyecto
-
-Actualmente el proyecto se encuentra en:
-
-**Release Candidate 1.0**
-
-Con más de:
-
-- 25 módulos Enterprise
-- Arquitectura modular
-- IA integrada
-- Aplicaciones móviles
-- Sistema Offline
-- Más de 150 pruebas automatizadas
-- Auditoría Enterprise >98/100
-
------
-
-# 🤖 Sotium AI
-
-Sotium POS incorpora una capa de Inteligencia Artificial integrada basada en **Google Gemini**, diseñada para asistir a los distintos departamentos del negocio.
-
-## Capacidades
-
-- 📈 Predicción de ventas
-- 📦 Predicción de consumo
-- 🛒 Recomendación de compras
-- 🍽 Optimización de recetas
-- 💰 Optimización de márgenes
-- 📊 Análisis financiero
-- 👥 Análisis de clientes
-- ⚠️ Detección de anomalías
-- 🧾 Explicación de KPIs
-- 📉 Predicción de roturas de stock
-- 🏭 Optimización de producción
-- 🔧 Mantenimiento predictivo
-- 🧼 Diagnóstico APPCC
-- 🔗 Diagnóstico de integraciones
-- 🚚 Optimización Delivery
-
-En caso de no disponer de conexión con Gemini, el sistema utiliza motores heurísticos para mantener el funcionamiento.
+Para más detalles, consulte la [Documentación Completa de Arquitectura](./docs/ARCHITECTURE.md).
 
 ---
 
-# 🔒 Seguridad
+## ⚙️ Tecnologías Utilizadas
 
-Sotium POS ha sido diseñado bajo un enfoque **Security First**.
+### **Frontend**
+* **React 19.0.1**: Biblioteca UI principal con Server/Client Components.
+* **Tailwind CSS 4.1**: Framework CSS de utilidad cero para diseño enterprise responsivo.
+* **Lucide React 0.546**: Sistema coherente de iconografía vectorial.
+* **Motion 12.23**: Motor de animaciones fluidas de alta performance.
+* **Recharts 3.10**: Visualización interactiva de gráficos financieros y analíticos.
 
-## Autenticación
-
-- JWT
-- Refresh Tokens
-- OAuth2
-- API Keys
-
----
-
-## Autorización
-
-Sistema completo de permisos por roles.
-
-Ejemplos:
-
-- Administrador
-- Gerente
-- Encargado
-- Camarero
-- Cocina
-- Repartidor
-- Caja
-- RRHH
-- Finanzas
-
-Cada usuario únicamente visualiza los módulos autorizados.
+### **Backend & Base de Datos**
+* **Node.js 22.14 & Express 4.21**: Runtime y servidor REST API de alto rendimiento.
+* **TypeScript 5.8.2**: Tipado estático estricto en el 100% del código base.
+* **Prisma ORM 6.4**: ORM de última generación para modelado y consultas con seguridad de tipos.
+* **PostgreSQL 16**: Motor relacional primario para despliegues centralizados.
+* **Better-SQLite3 13.0**: Motor de base de datos embebido para redundancia offline local.
+* **Socket.IO 4.8**: Comunicación bidireccional en tiempo real para KDS y comanderos.
+* **Winston 3.19 & Zod 4.4**: Sistema de logs estructurados y validación estricta de esquemas.
 
 ---
 
-## Protección
+## 🚀 Instalación Rápida
 
-- Helmet
-- CORS
-- Rate Limiting
-- Validaciones Zod
-- Sanitización de entradas
-- Bcrypt
-- Auditoría completa
-- Logs de actividad
+### **Requisitos Previos**
+* Node.js `>= 20.0.0`
+* npm `>= 10.0.0`
+* PostgreSQL `>= 15` *(Opcional en modo desarrollo local SQLite)*
 
----
+### **Pasos de Instalación**
 
-# 🇪🇸 Cumplimiento legal España
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/sotium/sotium-pos.git
+   cd sotium-pos
+   ```
 
-Sotium POS está preparado para cumplir la normativa española.
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-## VeriFactu
+3. **Configurar variables de entorno:**
+   Cree un archivo `.env` basado en `.env.example`:
+   ```bash
+   cp .env.example .env
+   ```
 
-- Facturación verificable
-- Encadenamiento de registros
-- Código QR
-- Firma
-- Exportación
+4. **Inicializar esquema de base de datos:**
+   ```bash
+   npx prisma db push
+   ```
 
----
-
-## TicketBAI
-
-Preparado para:
-
-- País Vasco
-- Diputaciones Forales
-- QR
-- Huella
-- Firma
-
----
-
-## Ley Antifraude 11/2021
-
-Compatible con:
-
-- Integridad de registros
-- No alteración
-- Auditoría
-- Trazabilidad
+5. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   La aplicación estará disponible en `http://localhost:3000`.
 
 ---
 
-# 🔄 Integraciones Enterprise
+## 🧪 Pruebas y Calidad de Código
 
-La plataforma dispone de una arquitectura desacoplada para integrar servicios externos.
-
-## Delivery
-
-- Glovo
-- Uber Eats
-- Just Eat
-- Deliveroo
-- Deliverect
-- Click & Collect
-- Pedidos Web
-
----
-
-## Pagos
-
-- Redsys
-- Stripe
-- PayPal
-- Bizum
-- SumUp
-- Adyen
-- Worldline
-
----
-
-## Facturación
-
-- VeriFactu
-- TicketBAI
-- Facturae
-- FACe
-- SII
-
----
-
-## Contabilidad
-
-- Sage
-- Holded
-- A3
-- Contasol
-- SAP Business One
-- Microsoft Business Central
-
----
-
-## Marketing
-
-- Mailchimp
-- Brevo
-- WhatsApp Business
-- Telegram
-- Firebase
-- Push Notifications
-
----
-
-## Calendarios
-
-- Google Calendar
-
-- Microsoft Outlook
-
-- Microsoft 365
-
----
-
-# 📡 API REST
-
-La aplicación expone una API REST modular.
-
-Ejemplo:
-
-```
-/api/auth
-/api/finance
-/api/hr
-/api/customers
-/api/products
-/api/orders
-/api/inventory
-/api/purchases
-/api/production
-/api/quality
-/api/maintenance
-/api/mobile
-/api/integrations
-/api/backoffice
-/api/bi
-/api/health
-```
-
-Todas las rutas utilizan:
-
-- JWT
-- Roles
-- Auditoría
-- Validaciones
-- Manejo de errores
-
----
-
-# ⚡ Socket.IO
-
-Toda la aplicación trabaja en tiempo real.
-
-Eventos típicos:
-
-- Nuevos pedidos
-- Cambio de mesa
-- Comandas
-- Cocina
-- Delivery
-- Stock
-- Producción
-- Caja
-- Alertas IA
-- Notificaciones
-
----
-
-# 📱 Ecosistema móvil
-
-El proyecto incorpora aplicaciones específicas para cada perfil.
-
-## 👨‍🍳 Camareros
-
-- Gestión de mesas
-- Comandas
-- Cobros
-- Clientes
-- Reservas
-
----
-
-## 👨‍🍳 Cocina (KDS)
-
-- Comandas
-- Prioridades
-- Estados
-- Tiempos
-- Alertas
-
----
-
-## 🚚 Delivery
-
-- Repartos
-- GPS
-- Firma
-- Fotografías
-- Incidencias
-
----
-
-## 👔 Gerencia
-
-- Dashboard
-- KPIs
-- IA
-- Finanzas
-- Alertas
-
----
-
-# 📊 Business Intelligence
-
-Paneles ejecutivos con información en tiempo real.
-
-Incluye:
-
-- Ventas
-- Márgenes
-- Productos
-- Clientes
-- Ocupación
-- Delivery
-- Producción
-- Compras
-- Finanzas
-- RRHH
-
-Todo ello asistido por **Sotium AI**.
-
----
-
-# 🌍 Multiempresa
-
-Compatible con múltiples empresas desde una única instalación.
-
-Cada empresa mantiene:
-
-- Usuarios
-- Productos
-- Clientes
-- Almacenes
-- Finanzas
-- Producción
-- Informes
-
-independientes.
-
----
----
-
-# 🏗 Arquitectura del proyecto
-
-Sotium POS ha sido diseñado siguiendo una arquitectura modular basada en principios **SOLID**, **Clean Architecture** y separación clara de responsabilidades.
-
-```text
-                     ┌─────────────────────────────┐
-                     │        React 18 UI          │
-                     │  (Componentes Enterprise)   │
-                     └─────────────┬───────────────┘
-                                   │
-                     ┌─────────────▼───────────────┐
-                     │     Context + Hooks         │
-                     └─────────────┬───────────────┘
-                                   │
-                     ┌─────────────▼───────────────┐
-                     │       Services Layer        │
-                     │  Business Logic + IA        │
-                     └─────────────┬───────────────┘
-                                   │
-                     ┌─────────────▼───────────────┐
-                     │      Express REST API       │
-                     │       Socket.IO Server      │
-                     └─────────────┬───────────────┘
-                                   │
-             ┌─────────────────────┴─────────────────────┐
-             │                                           │
-     ┌───────▼────────┐                       ┌──────────▼─────────┐
-     │ PostgreSQL     │                       │ SQLite Offline      │
-     │ Prisma ORM     │                       │ Sincronización      │
-     └────────────────┘                       └─────────────────────┘
-```
-
----
-
-# 🧱 Arquitectura por capas
-
-```
-UI (React)
-
-↓
-
-Componentes
-
-↓
-
-Hooks / Context
-
-↓
-
-Servicios
-
-↓
-
-API REST
-
-↓
-
-Prisma ORM
-
-↓
-
-PostgreSQL
-
-↓
-
-SQLite Offline
-
-↓
-
-Sincronización
-
-↓
-
-Socket.IO
-```
-
-Cada capa está completamente desacoplada para facilitar el mantenimiento y la escalabilidad.
-
----
-
-# ⚙ Stack tecnológico
-
-## Frontend
-
-- React 18
-- TypeScript
-- Vite
-- TailwindCSS
-- Lucide Icons
-- React Hooks
-- Context API
-
----
-
-## Backend
-
-- Node.js
-- Express
-- TypeScript
-- Socket.IO
-- JWT
-- Helmet
-- Zod
-- Compression
-- CORS
-
----
-
-## Base de datos
-
-- PostgreSQL
-- Prisma ORM
-- SQLite
-- better-sqlite3
-- sql.js
-
----
-
-## Inteligencia Artificial
-
-- Google Gemini
-- @google/genai
-- Motores heurísticos de respaldo
-- Diagnósticos inteligentes
-- Predicciones
-- Recomendaciones
-
----
-
-## Testing
-
-- Vitest
-- Testing Library
-- TypeScript Compiler
-- Build Validation
-
----
-
-## Integraciones
-
-- REST API
-- Webhooks
-- OAuth2
-- JWT
-- Socket.IO
-- CSV
-- Excel
-- JSON
-
----
-
-# 📂 Estructura del proyecto
-
-```text
-SOTIUM-POS/
-
-├── prisma/
-│   ├── schema.prisma
-│   └── migrations/
-│
-├── src/
-│
-├── components/
-│   ├── tpv/
-│   ├── kitchen/
-│   ├── inventory/
-│   ├── production/
-│   ├── finance/
-│   ├── quality/
-│   ├── maintenance/
-│   ├── integrations/
-│   ├── multicompany/
-│   ├── mobile/
-│   ├── bi/
-│   ├── crm/
-│   ├── reservations/
-│   ├── hr/
-│   └── backoffice/
-│
-├── services/
-│
-├── server/
-│
-├── routes/
-│
-├── context/
-│
-├── hooks/
-│
-├── utils/
-│
-├── data/
-│
-├── tests/
-│
-├── public/
-│
-├── dist/
-│
-└── package.json
-```
-
----
-
-# 📦 Requisitos
-
-Antes de instalar el proyecto necesitas:
-
-- Node.js 20 o superior
-- npm 10+
-- PostgreSQL 15+
-- Git
-- SQLite (automático)
-- Cuenta de Google AI Studio (opcional para Gemini)
-
----
-
-# 🚀 Instalación
-
-Clonar el repositorio:
+Sotium POS cuenta con una suite de pruebas automatizadas mediante **Vitest** y **Supertest** con más de 25 suites covering todos los módulos críticos.
 
 ```bash
-git clone https://github.com/jsoto-06/SOTIUM-POS.git
-```
+# Ejecutar la suite completa de pruebas
+npx vitest run
 
-Entrar en el proyecto:
+# Comprobar tipado estático TypeScript
+npm run lint
 
-```bash
-cd SOTIUM-POS
-```
-
-Instalar dependencias:
-
-```bash
-npm install
-```
-
----
-
-# 🔐 Variables de entorno
-
-Crear un archivo:
-
-```text
-.env
-```
-
-Ejemplo:
-
-```env
-DATABASE_URL="postgresql://usuario:password@localhost:5432/sotium"
-
-JWT_SECRET="cambia_esta_clave"
-
-GOOGLE_API_KEY="TU_API_KEY"
-
-PORT=3000
-```
-
----
-
-# 🗄 Base de datos
-
-Generar cliente Prisma:
-
-```bash
-npx prisma generate
-```
-
-Ejecutar migraciones:
-
-```bash
-npx prisma migrate deploy
-```
-
-o durante el desarrollo:
-
-```bash
-npx prisma migrate dev
-```
-
-Abrir Prisma Studio:
-
-```bash
-npx prisma studio
-```
-
----
-
-# ▶ Ejecutar en desarrollo
-
-Frontend + Backend:
-
-```bash
-npm run dev
-```
-
----
-
-Compilar producción:
-
-```bash
+# Compilar para producción
 npm run build
 ```
 
 ---
 
-Ejecutar producción:
+## 📄 Licencia
 
-```bash
-npm start
-```
-
----
-
-# 🧪 Ejecutar pruebas
-
-Todas las pruebas:
-
-```bash
-npm test
-```
-
-Con cobertura:
-
-```bash
-npm run test:coverage
-```
-
-Comprobación de TypeScript:
-
-```bash
-npx tsc --noEmit
-```
-
----
-
-# 🖥 Plataformas compatibles
-
-Sotium POS ha sido diseñado para funcionar en:
-
-- ✅ Windows
-- ✅ Linux
-- ✅ macOS (compatible)
-- ✅ Tablets Android
-- ✅ Tablets Windows
-- ✅ Navegadores modernos
-- ✅ Electron Desktop
-
----
-
-# 🔄 Modo Offline
-
-El sistema continúa funcionando incluso sin conexión.
-
-Características:
-
-- SQLite local
-- Cola de sincronización
-- Reintentos automáticos
-- Recuperación tras cortes de red
-- Sincronización con PostgreSQL
-- Resolución de conflictos
-
----
-
-# ⚡ Tiempo real
-
-Toda la plataforma utiliza **Socket.IO** para mantener sincronizados los dispositivos.
-
-Ejemplos:
-
-- Nuevas comandas en cocina.
-- Cambios de estado.
-- Actualización de mesas.
-- Avisos al camarero.
-- Stock en tiempo real.
-- Notificaciones push.
-- Alertas IA.
-
-# 🌐 Internacionalización
-
-Arquitectura preparada para múltiples países.
-
-Configuración independiente de:
-
-- IVA
-- Monedas
-- Idiomas
-- Impuestos
-- Facturación
-
----
-
-# 📈 Roadmap
-
-## ✅ Finalizado
-
-- TPV
-- Cocina (KDS)
-- Delivery
-- CRM
-- Inventario
-- Compras
-- Producción
-- Finanzas
-- RRHH
-- BI
-- Calidad
-- APPCC
-- Mantenimiento
-- Integraciones
-- Ecosistema móvil
-- IA
-- Multiempresa
-- BackOffice
-
----
-
-## 🚀 Próximas versiones
-
-- Aplicación Android nativa
-- Aplicación iOS
-- Cliente Windows
-- Cliente Linux
-- Cliente macOS
-- API pública
-- Marketplace de plugins
-- Portal para franquicias
-- Portal para proveedores
-- Portal para clientes
-- Marketplace de integraciones
-
----
-
-# 📸 Capturas de pantalla
-
-> Próximamente
-
-### TPV
-
-![TPV](docs/screenshots/tpv.png)
-
-### Plano de Mesas
-
-![Mesas](docs/screenshots/tables.png)
-
-### Cocina KDS
-
-![KDS](docs/screenshots/kds.png)
-
-### Dashboard Gerencial
-
-![Dashboard](docs/screenshots/dashboard.png)
-
-### Business Intelligence
-
-![BI](docs/screenshots/bi.png)
-
-### Producción
-
-![Producción](docs/screenshots/production.png)
-
-### Calidad APPCC
-
-![APPCC](docs/screenshots/haccp.png)
-
-### Ecosistema móvil
-
-![Mobile](docs/screenshots/mobile.png)
-
----
-
-# 🎥 Demo
-
-Próximamente.
-
----
-
-# 📚 Documentación
-
-La documentación técnica completa se encuentra en:
-
-```
-/SOFTWARE_SPECIFICATION.md
-```
-
-Roadmap del proyecto:
-
-```
-/ROADMAP_ENTERPRISE.md
-```
-
----
-
-# 🧪 Calidad del proyecto
-
-## Auditoría técnica
-
-| Área | Estado |
-|--------|--------|
-| Arquitectura | ✅ Excelente |
-| Frontend | ✅ Excelente |
-| Backend | ✅ Excelente |
-| Seguridad | ✅ Excelente |
-| React | ✅ Optimizado |
-| Prisma | ✅ Optimizado |
-| SQLite | ✅ Optimizado |
-| PostgreSQL | ✅ Optimizado |
-| Socket.IO | ✅ Correcto |
-| TypeScript | ✅ Sin errores |
-| Tests | ✅ 100% |
-| Build | ✅ Producción |
-
----
-
-## Cobertura
-
-```
-✔ 23 Test Suites
-
-✔ 150 Tests
-
-✔ 100% Correctos
-```
-
----
-
-# 🚀 Rendimiento
-
-Preparado para establecimientos de cualquier tamaño.
-
-Compatible con:
-
-- Bar
-- Cafetería
-- Restaurante
-- Terraza
-- Gastrobar
-- Cervecería
-- Pizzería
-- Hamburguesería
-- Hotel
-- Food Truck
-- Franquicias
-- Dark Kitchen
-- Catering
-
----
-
-# 🏢 Escalabilidad
-
-Desde un pequeño bar hasta cientos de establecimientos.
-
-Preparado para:
-
-- Multiempresa
-
-- Multialmacén
-
-- Multicaja
-
-- Multisede
-
-- Franquicias
-
-- Cloud
-
-- On Premise
-
-- Offline
-
----
-
-# ❤️ Filosofía
-
-Sotium POS nace con una idea muy clara.
-
-Crear un software moderno para hostelería que sea:
-
-- rápido
-
-- intuitivo
-
-- robusto
-
-- escalable
-
-- inteligente
-
-sin depender de soluciones antiguas ni interfaces obsoletas.
-
-Nuestro objetivo es que cualquier establecimiento pueda trabajar con la misma tecnología que utilizan las grandes cadenas de restauración.
-
----
-
-# 🤝 Contribuciones
-
-Las contribuciones son bienvenidas.
-
-Puedes colaborar mediante:
-
-- Pull Requests
-
-- Issues
-
-- Mejoras
-
-- Nuevos módulos
-
-- Corrección de errores
-
-Antes de enviar código:
-
-- Mantén la arquitectura existente.
-
-- No dupliques componentes.
-
-- Sigue los principios SOLID.
-
-- Añade pruebas.
-
-- Ejecuta TypeScript.
-
-- Ejecuta Vitest.
-
----
-
-# 🐞 Reportar errores
-
-Si encuentras un problema:
-
-1. Abre un Issue.
-
-2. Describe el error.
-
-3. Adjunta capturas.
-
-4. Indica pasos para reproducirlo.
-
-5. Adjunta logs si es posible.
-
----
-
-# ⭐ Hoja de ruta
-
-## Versión 1.0
-
-- ✅ TPV
-- ✅ Cocina
-- ✅ Delivery
-- ✅ CRM
-- ✅ Inventario
-- ✅ Compras
-- ✅ Producción
-- ✅ Finanzas
-- ✅ RRHH
-- ✅ BI
-- ✅ Calidad
-- ✅ APPCC
-- ✅ Integraciones
-- ✅ Ecosistema móvil
-- ✅ IA
-- ✅ Multiempresa
-
----
-
-## Próximamente
-
-- Aplicación Android nativa
-
-- Aplicación iOS
-
-- Cliente Windows
-
-- Cliente Linux
-
-- Cliente macOS
-
-- Marketplace
-
-- API Pública
-
-- Portal Clientes
-
-- Portal Proveedores
-
-- Portal Franquicias
-
-- Marketplace de Plugins
-
-- Integraciones certificadas
-
----
-
-# 📄 Licencia
-
-Este proyecto se distribuye bajo licencia MIT.
-
-Consulta el archivo:
-
-```
-LICENSE
-```
-
----
-
-# 👨‍💻 Autor
-
-**Jonathan Soto**
-
-Founder & Lead Developer
-
-**Sotium POS**
-
-La nueva generación de software para hostelería.
-
-GitHub:
-
-```
-https://github.com/jsoto-06
-```
-
----
-
-# 🌐 Sitio web
-
-Próximamente
-
-```
-
-```
-
----
-
-# 📧 Contacto
-
-Próximamente
-
-```
-jonathansoto06@gmail.com
-```
-
----
-
-# ⭐ Si te gusta el proyecto...
-
-No olvides dejar una estrella ⭐ en GitHub.
-
-Tu apoyo ayuda a seguir desarrollando Sotium POS.
+Este proyecto está distribuido bajo los términos de la Licencia **MIT**. Consulte el archivo [LICENSE](./LICENSE) para más detalles.
 
 ---
 
 <div align="center">
 
-# Sotium POS
-
-### La nueva generación de software para hostelería
-
-**Enterprise ERP + TPV**
-
-Desarrollado con JSOTO06 ❤️ utilizando
-
-React • TypeScript • Vite • Express • Prisma • PostgreSQL • SQLite • Socket.IO • Gemini AI
-
----
-
-**© 2026 Sotium POS**
+**Desarrollado con ❤️ por el equipo de Sotium Software Enterprise**  
+*Garantizando la excelencia operativa en la hostelería moderna.*
 
 </div>
-
